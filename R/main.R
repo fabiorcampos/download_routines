@@ -17,7 +17,7 @@ df = as.data.frame(df)
 # Create Vectors to pdf Url
 pdf_url = df$UrlDi
 pdf_url = na.omit(pdf_url)
-pdf_vec = gsub("https://s3-us-west-2.amazonaws.com/ctprod15/Dirco/Temp/DI_", "", pdf_url)
+pdf_vec = gsub("", "", pdf_url)
 
 # Set place that the files will be storage
 setwd("~/dropbox2/Dropbox/R_PORTFOLIO/download_routines/output")
@@ -32,7 +32,7 @@ setwd("~/dropbox2/Dropbox/R_PORTFOLIO/download_routines")
 # Create Vectors to xml Url
 xml_url = df$UrlXmlDi
 xml_url = na.omit(xml_url)
-xml_vec = gsub("https://s3-us-west-2.amazonaws.com/ctprod15/Dirco/Temp/XML_", "", xml_url)
+xml_vec = gsub("", "", xml_url)
 
 # Set place that the files will be storage
 setwd("~/dropbox2/Dropbox/R_PORTFOLIO/download_routines/output")
